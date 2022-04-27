@@ -1,0 +1,105 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addfaucet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "interval",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "max_tokens_per_interval",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "faucet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "interval",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "max_tokens_per_interval",
+                    "type": "uint32"
+                },
+                {
+                    "name": "last_transfer",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "transferred_tokens",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "givetokens",
+            "base": "",
+            "fields": [
+                {
+                    "name": "faucet",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "rmfaucet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addfaucet",
+            "type": "addfaucet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "givetokens",
+            "type": "givetokens",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmfaucet",
+            "type": "rmfaucet",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "faucets",
+            "type": "faucet",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
