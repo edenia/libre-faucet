@@ -16,7 +16,7 @@ After the last step is completed, the built smart contracts are stored in the `b
 > For standard building guides, follow the instructions in [Build and deploy](https://developers.eos.io/manuals/eosio.contracts/latest/build-and-deploy) section.
 
 ## Useful cleos commands
-Next are defined the corresponding cleos commands to interact with the smart contract.
+The following cleos commands can be used to interact with the smart contract.
 
 ### addfaucet
 `cleos push action faucet.libre addfaucet '{"account":"<name>","interval":"<time_point_sec>","max_tokens_per_interval":<uint32>}' -p faucet.libre@active`
