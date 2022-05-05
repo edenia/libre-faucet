@@ -3,7 +3,7 @@
 Phoenix Testnet Faucet.
 
 ## Build
-Next are defined preconditions that are required for building the smart contracts.
+The following pre-conditions are required for building the smart contracts.
 ### Preconditions
 - `eosio.cdt` version `1.8`
 
